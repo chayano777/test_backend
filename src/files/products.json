@@ -1,0 +1,57 @@
+[
+	{
+		"title": "Pepsi",
+		"price": 375,
+		"stock": 7,
+		"thumbnail": "Sin imagen",
+		"description": "Liquido Black",
+		"status": "true",
+		"category": "gaseosa",
+		"code": 220,
+		"id": 1
+	},
+	{
+		"title": "7up Light",
+		"price": 900,
+		"stock": 50,
+		"thumbnail": "Sin imagen",
+		"description": "Suero regenerativo",
+		"status": "true",
+		"category": "gaseosa",
+		"code": 221,
+		"id": 2
+	},
+	{
+		"title": "7up",
+		"price": 750,
+		"stock": 5,
+		"thumbnail": "Sin imagen",
+		"description": "Suero regenerativo",
+		"status": "true",
+		"category": "gaseosa",
+		"code": 221,
+		"id": 3
+	},
+	{
+		"title": "Manaos Uva",
+		"price": 550,
+		"stock": 10,
+		"thumbnail": "Sin imagen",
+		"description": "Uva patera",
+		"status": "true",
+		"category": "gaseosa",
+		"code": 223,
+		"id": 4
+	},
+	{
+		"title": "Mirinda",
+		"price": 720,
+		"stock": 20,
+		"thumbnail": "Sin imagen",
+		"description": "sabor puro",
+		"status": "true",
+		"category": "gaseosa",
+		"code": 225,
+		"id": 5
+	}
+]
