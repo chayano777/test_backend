@@ -85,13 +85,13 @@ export default class ProductManager {
     }*/
 
     updateProduct = async (id, title, price, stock, thumbnail, description, status, category, code) => {
-        console.log(`------------------> ${title}`)
+        //console.log(`------------------> ${title}`)
         const products = await this.getProducts();
 
         let indexProduct = products.findIndex((e)=>{
             return e.id === id;
         })
-        console.log(`-----------------> ${indexProduct}`)
+        //console.log(`-----------------> ${indexProduct}`)
 
         products[indexProduct].title = title;
         products[indexProduct].price = price;

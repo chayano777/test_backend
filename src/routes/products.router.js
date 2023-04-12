@@ -1,9 +1,8 @@
 import { Router } from "express";
 import ProductManager from "../managers/productManager.js"
 
-const manager = new ProductManager();
-
 const router = Router();
+const manager = new ProductManager();
 
 router.get('/', async (req, res)=>{
     const products = await manager.getProducts();
@@ -44,7 +43,10 @@ router.put('/:pid', async (req, res)=>{
 
    if(!title || !price || !stock || !description || !category || !code) {
        
-       res.send('Faltan datos');
+       res.send({
+            status: "No realizado",
+            msg: "Faltan datos"
+       });
        
        return
    }
@@ -56,7 +58,7 @@ router.put('/:pid', async (req, res)=>{
 router.delete('/:pid', async (req, res)=>{
     const id = req.body.id;
 
-    const mensaje = await manager.deleteProduct(id)
+    await manager.deleteProduct(id)
 
     res.send({
         status: "Success",
